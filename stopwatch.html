@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        h1
+{
+     text-align:center;
+     font-size:60px;
+    
+}
+
+h2{
+    margin-left: 430px;
+    font-size: 50px;
+}
+#main
+{
+	margin-left:250px;
+	height:250px;
+	width:800px;
+	
+}
+#button_main
+{
+	margin-top:50px;
+	margin-left:250px;
+}
+button
+{
+	height:40px;
+	width:120px;
+	margin-left:10px;
+	border-radius:20px;
+	font-size:25px;
+}
+
+body
+{
+	background-color:cornflowerblue;
+}
+    </style>
+</head>
+<body>
+    <h1>Stopwatch </h1>
+	<div id="main">
+		<div>
+			<h2 style="color:black" id="cur_time">0</h2>
+		</div>
+		<div id="button_main">
+			<button id="toggler" onclick="toggler()">Start</button>
+            <button id="Stop" onclick="stop()">Stop</button>
+			<button id="reset" onclick="reset_time()">Reset</button>
+
+		</div>
+	</div>
+	
+    <script>
+        var started = false;
+var timer = 0;
+var interval;
+function toggler()
+{
+	if(started == false)
+	{
+		started=true;
+		interval = setInterval(function()
+		{
+			timer = timer + 0.01;
+			document.getElementById("cur_time").innerHTML = timer.toFixed(2);
+		},10);
+	}
+	
+}
+
+function stop(){
+    if(started == true){
+        started=false;
+        clearInterval(interval);
+    }
+}
+
+function reset_time()
+{
+	started = false;
+	clearInterval(interval);	
+	timer =0.00;
+	document.getElementById("cur_time").innerHTML = timer;
+	
+	var past_element = document.getElementById("past_list")
+	while(past_element.firstChild)
+		past_element.removeChild(past_element.firstChild);
+}	
+
+document.addEventListener('keypress',function(event)
+{
+	var key_val = event.key;
+	if(key_val == 's')
+	{
+		toggler();
+	}
+	else if(key_val == 'r')
+	{
+		reset_time();
+	}
+	
+	else
+	{
+		alert("Please use the keys");
+	}
+});
+    </script>
+    
+</body>
+</html>
