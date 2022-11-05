@@ -1,0 +1,88 @@
+
+:root {
+    --first-color: blanchedalmond;
+  }
+
+
+
+.box{
+    color: maroon;
+    font-size: large;
+    margin-top: 0px;
+    background-color: khaki;
+}
+
+
+table, th, td {
+border:1px solid rgb(194, 151, 42);
+}
+
+
+/**function**/ 
+
+@function sum($numbers...) {
+    $sum: 0;
+    @each $number in $numbers {
+      $sum: $sum + $number;
+    }
+    @return $sum;
+  }
+
+
+table{
+position: absolute;
+top: sum(10px, 90px, 20px);
+left: sum(500px, 100px, 24px);
+height: 55%;
+width: 40%;
+
+}
+.box2 {
+width: 300px;
+background-color: bisque;
+height: 100px;
+}
+
+button{
+background-color: var(--first-color);
+font-style: italic;
+align: center;
+height: 100px;
+font-weight: bold;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+button:hover {
+background-color: brown;
+color: white;
+}
+.box3{
+
+width: 300px;
+}
+
+
+/**VARIABLES**/
+
+
+$myFont: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+h4{
+background-color: var(--first-color);
+color: chocolate;
+margin: 0%;
+margin-top: 10px;
+font-style: italic;
+text-align: center;
+font-size: xx-large;
+padding-top: 10px;
+font-family: $myFont;
+}
+footer{
+text-align: center;
+font-style: italic;
+}
+
+
+
+

@@ -1,0 +1,34 @@
+body{
+    margin: 0%;
+    background-image:linear-gradient(white, burlywood) ;
+/**nesting in the body starts here**/
+
+/**using mixins**/
+
+
+@mixin usingmixi {
+    color: burlywood;
+    font-style: italic;
+    
+}
+    h1{
+        @include usingmixi;
+        text-align: center;
+        font-size: xx-large;
+        background-color: darkgoldenrod;
+        margin: 0px;
+        border-top: 0px;
+        padding: 0px;
+        max-width: 100%;
+    }
+
+    h2{
+        @include usingmixi;
+        position: absolute;
+        top: 60px;
+        left: 627px;
+    
+    
+    }
+
+}

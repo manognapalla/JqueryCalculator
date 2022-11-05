@@ -1,0 +1,68 @@
+:root {
+  --first-color: blanchedalmond;
+}
+
+.box {
+  color: maroon;
+  font-size: large;
+  margin-top: 0px;
+  background-color: khaki;
+}
+
+table, th, td {
+  border: 1px solid rgb(194, 151, 42);
+}
+
+/**function**/
+table {
+  position: absolute;
+  top: 120px;
+  left: 624px;
+  height: 55%;
+  width: 40%;
+}
+
+.box2 {
+  width: 300px;
+  background-color: bisque;
+  height: 100px;
+}
+
+button {
+  background-color: var(--first-color);
+  font-style: italic;
+  align: center;
+  height: 100px;
+  font-weight: bold;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: brown;
+  color: white;
+}
+
+.box3 {
+  width: 300px;
+}
+
+/**VARIABLES**/
+h4 {
+  background-color: var(--first-color);
+  color: chocolate;
+  margin: 0%;
+  margin-top: 10px;
+  font-style: italic;
+  text-align: center;
+  font-size: xx-large;
+  padding-top: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+footer {
+  text-align: center;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=assignment71.css.map */
