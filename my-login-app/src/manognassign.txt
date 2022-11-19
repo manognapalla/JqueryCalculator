@@ -1,0 +1,5 @@
+NUID: 002776168
+Manogna Pallapothu
+
+
+Used fetch to get API data. Used hash map to convert data object into key-value pair. 
