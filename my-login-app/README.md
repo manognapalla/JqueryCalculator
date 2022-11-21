@@ -1,3 +1,18 @@
+Manogna Pallapothu
+NUID: 002776168
+
+This assignment is the extension of Assignment-8, created a login page for the previous API's that were implemented. 
+
+4 pages are made using reactjs. Card component has been implemented in these pages. The pages have been styled using css. 
+Used material-ui elements as well.
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
