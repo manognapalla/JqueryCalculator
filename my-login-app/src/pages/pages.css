@@ -1,0 +1,32 @@
+.center{
+display: flex;
+height: 40vh;
+width: 30vw; 
+margin-right: 20px;
+
+align-items: center;
+justify-content: center;
+}
+
+.cardstyle{
+
+    font-style: italic;
+    margin-left: 500px;
+    
+}
+
+.homecss{
+    text-align: center;
+    color: brown;
+}
+
+.titlewelc{
+    text-align: center;
+    font-weight: bold;
+}
+
+.buttoncss{
+    align-self: center;
+    color: brown;
+    
+}
