@@ -1,0 +1,89 @@
+.banner-wrapper {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.banner {
+    height: 250px;
+    /* width: 1000px; */
+    background: #eee;
+}
+
+.card {
+    display: inline-block;
+    height: 315px;
+    width: 215px;
+    box-shadow: 4px 4px 10px #ccc;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+}
+
+.weather-skeleton {
+    display: inline-block;
+    height: 300px;
+    width: 215px;
+    background: #eee;
+    margin: 20px;
+}
+
+.skeleton-icon {
+    margin: 0 auto;
+}
+
+.search-bar {
+    margin: 60px 0 30px 0;
+}
+
+.search-bar input {
+    height: 40px;
+    padding: 0 5px;
+    width: 50% !important;
+    border: none;
+    background: inherit;
+    border-bottom: 1px solid;
+}
+
+.search-bar input:focus {
+    border: none;
+    border-bottom: 1px solid blue;
+}
+
+.weather-cards {
+    text-align: center;
+}
+
+.temp-detail {
+    font-size: 10px;
+}
+
+.temp-detail label {
+    margin: 0 15px;
+}
+
+.details-wrapper {
+    height: 215px;
+    width: 100%;
+    text-align: center;
+}
+
+.details-wrapper .details-day {
+    margin: 0 20px;
+    display: inline-block;
+}
+
+.details-day p {
+    font-weight: 700;
+}
+
+.back-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+p.location {
+    font-weight: 700;
+    font-size: 25px;
+}
