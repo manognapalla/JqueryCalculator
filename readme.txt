@@ -1,4 +1,4 @@
-Manogna Pallapothu -- 002776168
+
 
 Part1: Used jquery---arrow functions to implement a calculator.
 
